@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio_react_ver/static/css/main.24028543.css",
+    "main.js": "/portfolio_react_ver/static/js/main.1206d98b.js",
+    "static/js/787.1f11dfe9.chunk.js": "/portfolio_react_ver/static/js/787.1f11dfe9.chunk.js",
+    "static/media/remixicon.svg?t=1690730386070": "/portfolio_react_ver/static/media/remixicon.db77551b8efc76571c4f.svg",
+    "static/media/birthBg.jpg": "/portfolio_react_ver/static/media/birthBg.474db01464d4286c3239.jpg",
+    "static/media/remixicon.eot?t=1690730386070": "/portfolio_react_ver/static/media/remixicon.53ec05edb4b6864b45b1.eot",
+    "static/media/remixicon.ttf?t=1690730386070": "/portfolio_react_ver/static/media/remixicon.4aa0fd158658e2a40e79.ttf",
+    "static/media/skillBg.jpg": "/portfolio_react_ver/static/media/skillBg.ac4881ffc947f057589b.jpg",
+    "static/media/nameBg.jpg": "/portfolio_react_ver/static/media/nameBg.8d38f05e4b1c9378f505.jpg",
+    "static/media/emailBg.jpg": "/portfolio_react_ver/static/media/emailBg.a3d2061d5424328bf238.jpg",
+    "static/media/mainBg.jpg": "/portfolio_react_ver/static/media/mainBg.2e0bc9f5edea308242e2.jpg",
+    "static/media/remixicon.woff?t=1690730386070": "/portfolio_react_ver/static/media/remixicon.affd60ca37df38cfee4f.woff",
+    "static/media/remixicon.woff2?t=1690730386070": "/portfolio_react_ver/static/media/remixicon.821a773710130bcf4674.woff2",
+    "static/media/astronautBg.png": "/portfolio_react_ver/static/media/astronautBg.1284389e8c9ab8732815.png",
+    "static/media/wave1.png": "/portfolio_react_ver/static/media/wave1.6fd38aa386725c266881.png",
+    "static/media/wave3.png": "/portfolio_react_ver/static/media/wave3.e5625485c1812824254e.png",
+    "static/media/rocketCursor2.svg": "/portfolio_react_ver/static/media/rocketCursor2.a336c515f5908aa5c750.svg",
+    "index.html": "/portfolio_react_ver/index.html",
+    "static/media/titleWave1.svg": "/portfolio_react_ver/static/media/titleWave1.94f9750f4de8638177b0.svg",
+    "static/media/titleWave2.svg": "/portfolio_react_ver/static/media/titleWave2.366709df2aadcc71e5d6.svg",
+    "main.24028543.css.map": "/portfolio_react_ver/static/css/main.24028543.css.map",
+    "main.1206d98b.js.map": "/portfolio_react_ver/static/js/main.1206d98b.js.map",
+    "787.1f11dfe9.chunk.js.map": "/portfolio_react_ver/static/js/787.1f11dfe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24028543.css",
+    "static/js/main.1206d98b.js"
+  ]
+}
