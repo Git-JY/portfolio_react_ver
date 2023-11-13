@@ -1,0 +1,137 @@
+//임포트
+
+/* 1. 폰트들 */
+
+//inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Lora:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Noto+Sans+KR&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+// SUITE
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+//검은고딕
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+
+//오아고딕
+@font-face {
+    font-family: 'OAGothic-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+//---------- ---------- ---------- ---------- ----------
+@mixin flex($x:center, $y:center){
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+
+    @content;
+}
+
+@mixin font($a:inherit, $b:inherit, $c:inherit){
+    font-size: $a;
+    font-weight: $b;
+    color: $c;
+
+    @content;
+}
+
+@mixin text(){
+    word-break: keep-all;
+    word-wrap: break-word;
+    @content;
+}
+
+//컬러
+$mainColor1: #6F2DBD;
+$mainColor2: #A663CC;
+$mainColor3: #B298DC;
+$mainColor4: #B8D0EB;
+$mainColor5: #B9FAF8;
+
+$grayColor1: #D9D9D9;
+$grayColor2: #AAAAAA;
+$grayColor3: #9D9D9D;
+$grayColor4: #666666;
+
+
+//---------- ---------- ---------- ---------- ----------
+// ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
+// 5. 변수들)
+$MarPad: 12.5%;
+$topPad: 200px;
+// ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
+// 6. 애니메이션)
+
+//Main
+@keyframes ani_glitter{
+    0% {box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.50);}
+    100% {box-shadow: 0px 0px 25px 25px rgba(255, 255, 255, 0.30);}
+}
+@keyframes ani_cursor{
+    0% {background-color: white;}
+    100% {background-color: transparent;}
+}
+
+//About
+@keyframes ani_delay{
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+//Portfolio
+@keyframes moveX1{
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+@keyframes moveX2{
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(100%);}
+}
+@keyframes handMove{
+    0% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(0%);
+    }
+    75% {
+        transform: translateX(-100%);
+
+    }
+    90% {
+        transform: translateX(0%);
+        opacity: 60%;
+    }
+    100%{
+        opacity: 0%;
+        display: none;
+    }
+}
+
+
+//Contact
+@keyframes svg {
+    0%{
+
+    }
+    50%{ 
+        /* stroke-width: 0; */
+    }
+    100%{
+        stroke-dashoffset: 0px;
+        fill: white;
+    }
+}

@@ -1,0 +1,844 @@
+@media (max-width: 650px){
+html{
+    font-size: 14px;
+}
+
+body{
+
+}
+
+//스크롤바 css↓
+body::-webkit-scrollbar {
+   
+}
+
+body::-webkit-scrollbar-thumb {
+ 
+}
+
+body::-webkit-scrollbar-track {
+   
+}
+
+article h2, article h2>strong{                        
+    font-size: 2.5rem; 
+}
+
+//========== ========== ========== ========== ==========
+
+    header{
+        >nav{
+            border-radius: 0px 0px 0px 20px;
+            padding: 20px;
+
+            >button.closeBtn{
+                display: inline-block;
+                >i{
+                }
+            }//button.closeBtn
+
+            >ul{
+                @include flex(flex-start){
+                    flex-direction: column;
+                };
+                >li{
+                    &:not(:last-child){
+                        margin-right: 0px;
+                        margin-bottom: 15px;
+                    }
+
+                    &:hover{
+                    
+                    }
+                }//li
+            }//ul
+        }//nav
+
+        &.active{
+            >button.openBtn{
+
+            }
+            >nav{
+            }
+        }
+    }//header
+
+
+
+    main{
+
+        >article.main{
+        
+            >h1{
+            
+                font-size: 3.5vw;
+
+                >strong{
+
+                    &:nth-of-type(1){
+                    
+                    }
+                }//strong
+            }//h1
+            
+            >div.animationBgWrapper{
+                
+                >ul.starWrapper{
+                    
+                    >li{
+                    
+
+                        &::after{ 
+                            
+                        }
+
+                        &:nth-of-type(1){
+                            
+                        }
+                        &:nth-of-type(2){
+                            
+                        }
+                    }
+                }//ul.starWrapper
+                
+                >div.animationBg{
+                    
+                    &:after{
+                        
+                    }
+
+                    >i{
+                    
+                        &.active{
+                        
+                        }
+
+                        &.back{
+                            
+                        }
+                        &.middle{
+                        
+                        }
+                        &.front{
+                        
+                        }
+                    }
+                }//div.animationBg
+
+
+            }//div.animationBgWrapper
+
+        }//article.main
+
+        >article.about{
+
+            >div.contentsWrapper{
+                padding: 0px $MarPad;
+
+                >div.leftWrapper{ 
+                    width: 100%;
+
+                    >div.txtWrapper{
+                        
+
+                        >div.titleWrapper{
+                            
+
+                            >h2{
+                                
+                            }
+                            >a.gitBtn{
+                                
+                                >i{
+                                
+                                }
+                            }
+                        }//div.titleWrapper
+
+                        >p{      
+                            
+                            >strong{
+                            
+                            }
+                        }
+
+                    }//div.txtWrapper
+
+                    >ul.btnWrapper{
+
+
+                        >li{
+                            // outline: 1px solid red;
+                            &:not(:last-child){
+                                
+                            }
+                        
+                            
+                            >button.contents{
+                            
+                                
+                                >i{
+                                    
+                                }
+                                >span{
+                                
+                                }
+                                
+                                &::after{
+                                
+                                }
+
+                                &:hover{
+                                    
+                                    &::after{
+                                        
+                                    }
+                                }
+                            }
+                            >p.mbAnswer{
+
+                            }
+                        }//li
+                    }//ul.btnWrapper
+
+                }//div.leftWrapper
+
+                >div.rightWrapper{
+                    display: none;
+                    
+                    >ul.infoWrapper{
+                        
+                        >li{
+                        
+                            
+                            &.nameAnswer{
+                                
+                            }
+                            &.birthAnswer{
+                                    
+                            }
+                            &.emailAnswer{
+                                
+                            }
+                        }
+                    }//ul.infoAppearWrapper
+                    
+                }//div.rightWrapper
+
+            }//div.contentsWrapper
+
+            >div.bgWrapper{
+                width: 100%;
+                &::before{
+                
+
+                }
+                &::after{
+                    background: rgba(0, 0, 0, 0.2);
+                }
+
+            }//div.bgWrapper
+            
+            &.nameAnswer{
+                >div.bgWrapper{
+                    
+                }
+                >div.contentsWrapper{
+                    >div.leftWrapper{
+                        ul.btnWrapper{
+                            li.nameWrapper{
+                                button.contents{
+                                    
+                                    &::after{
+                                        
+                                    }
+                                }
+                                p.mbAnswer{
+                                    display: inline-block;
+                                }
+                            }
+        
+                        }
+                    }
+
+                    ul.infoWrapper >li.nameAnswer{
+                        
+                    }
+                }
+            }///article.about.nameAnswer
+            &.birthAnswer{
+                >div.bgWrapper{
+                    
+                }
+                >div.contentsWrapper{
+                    >div.leftWrapper{
+                        ul.btnWrapper{
+                            li.birthWrapper{
+                                button.contents{
+                                    
+                                    &::after{
+                                    
+                                    }
+                                }
+                                p.mbAnswer{
+                                    display: inline-block;
+                                }
+                            }
+        
+                        }
+                    }
+
+                    ul.infoWrapper >li.birthAnswer{
+                        
+                    }
+                }
+            }//article.about.birthAnswer
+            &.emailAnswer{
+                >div.bgWrapper{
+                    
+                }
+                >div.contentsWrapper{
+                    >div.leftWrapper{
+                        ul.btnWrapper{
+                            li.emailWrapper{
+                                button.contents{
+                                    
+                                    &::after{
+                                    }
+                                }
+                                p.mbAnswer{
+                                    display: inline-block;
+                                }
+                            }
+        
+                        }
+                    }
+
+                    ul.infoWrapper >li.emailAnswer{
+                    
+                    }
+                    
+                }
+
+            }//article.about.emailAnswer
+
+            &.scroll{
+                >div.contentsWrapper{
+                    >div.leftWrapper{
+                    
+                    }
+                    >div.rightWrapper{
+                        
+                    }
+                }//div.contentsWrapper
+            }//&.scroll
+        }//article.about
+
+        >article.skill{
+            
+            >div.sticked{
+            
+                >div.contentsWrapper{
+                    
+                    
+                    >div.titleWrapper{
+                        
+                        >h2{
+                            
+                        }
+                        >p.arrowWrapper{
+                            width: 86px; height: 55px;
+                            >img{
+                                
+                            }
+                            i.progress{
+                                
+                                >img{
+                                
+            
+                                }
+                            }
+                        }//p.arrowWrapper
+                    }//div.titleWrapper
+                    
+                    ul.itemWrapper{
+                        
+                        >li{
+                            
+                            flex-shrink: 0;
+                            &:not(:last-of-type){
+                            
+                            }
+                            &:nth-of-type(1){
+                                
+                            }
+                            &:last-of-type{
+                            
+                            }
+                            
+                            >figure.skillLogoWrapper{
+                                
+
+                                >i.skillLogo{
+                                
+                                    >img{
+                                    
+                                    }
+                                }//i.skillLogo
+                                
+                                >figcaption{
+                                    
+                                }
+                                >div.level{
+                                    
+                                }
+
+                                &:hover{
+                                    >div.level{
+                                    
+                                    }
+                                }
+                            }//figure.skillLogoWrapper
+                            
+                            >ul.levelDescription{
+                                
+                                &::-webkit-scrollbar {
+                                    
+                                }
+
+                                >li{
+                                    &:not(:last-of-type){
+                                    
+                                    }
+                                }
+                                
+                            }//ul.levelDescription
+
+                            &:nth-child(3n + 1){
+                                >figure.skillLogoWrapper{
+                                
+                                }
+                            }
+                            &:nth-child(3n + 2){
+                                >figure.skillLogoWrapper{
+                                
+                                }
+                            }
+                            &:nth-child(3n + 3){
+                                >figure.skillLogoWrapper{
+                                
+                                }
+                            }
+                        }//li
+                    }//ul.itemWrapper
+                }//div.contentsWrapper
+                >div.bgWrapper{
+                
+                    &::after{
+                    
+                    }
+                }
+            }//div.sticked
+        }//article.skill
+
+        >article.portfolio{
+        
+            >div.bgWrapper{
+        
+                div.titleTopWrapper{
+                    
+                    &::before{
+                    
+                    }
+                    >h2{
+                    
+                        >strong:nth-of-type(1){
+                    
+                        }
+                        >strong:nth-of-type(2){
+                            
+                        }
+                    }
+                }
+                div.titleBottomWrapper{
+                
+                    &::before{
+                        
+                    }
+                    >h2{
+                        
+                        >strong:nth-of-type(1){
+                            
+                        }
+                        >strong:nth-of-type(2){
+                            
+                        }
+                    }
+                }
+            }//div.bgWrapper
+
+            >ul.portfolioItemWrapper{
+                
+                >li.item{
+                    width: 47%; height: 30vw;
+
+                    &:hover{
+                        
+                    }
+
+                    >img{
+                    
+                    }
+                    &::before{
+                        
+                    }
+
+                    >div.contentsWrapper{
+                        
+                        @include font(2vw, normal, $grayColor1);
+                        >strong{
+                            @include font(3.2vw, 600, white);
+                        }
+                        >p{
+                            
+                            
+                        }
+                        >span{
+
+                        }
+                    }
+                }
+            }//ul.portfolioItemWrapper
+
+            @media (max-width: 450px){
+                >ul.portfolioItemWrapper{
+                    column-gap: 0%;
+                    >li.item{
+                        width: 100%; height: 35vw;
+                        border-radius: 20px;
+    
+                        &:hover{
+                            
+                        }
+    
+                        >img{
+                        
+                        }
+                        &::before{
+                            
+                        }
+    
+                        >div.contentsWrapper{
+                            
+                            @include font(3.5vw, normal, $grayColor1);
+                            >strong{
+                                @include font(4.5vw, 600, white);
+                            }
+                            >p{
+                                
+                                
+                            }
+                            >span{
+    
+                            }
+                        }
+                    }
+                }//ul.portfolioItemWrapper
+            }//@media (max-width: 450px)
+
+            &.scroll{
+                >ul.portfolioItemWrapper{
+                    
+                }
+            }
+        }//article.portfolio
+        >div.detailPopupAllWrapper{
+            
+            &.active{
+            
+            }
+            
+            >button.xBtn{
+                
+                // outline: 1px solid red;
+                >i{
+                    
+                }
+            }
+
+            >div.detailPopupWrapper{
+
+                >div.leftWrapper{
+                    >i{
+                        
+                        img{
+                            
+                        }
+                        &.none{
+                        
+                        }
+                    }
+
+                    >div.imgSwiper{
+                    
+        
+                        >div.swiper-wrapper{
+                        
+        
+                            >div.slide{
+                                >img{
+                                
+                                }
+        
+                                &::after{
+                                    
+                                }
+                            }
+                        }//div.swiper-wrapper
+                        >div.swiper-button-prev{
+                        
+                            &::after{
+                        
+                            }
+                            &:hover{
+                                &::after{
+                                
+                                }
+                            }
+                        }//div.swiper-button-prev
+                        
+                        >div.swiper-button-next{
+                            // outline: 1px solid blue;
+                            &::after{
+                            
+                            }
+                            &:hover{
+                                &::after{
+                                    
+                                }
+                            }
+        
+                        }//div.swiper-button-next
+        
+                        div.swiper-pagination{
+                            
+                            >span.swiper-pagination-current{
+                                
+                            }
+                            >span.swiper-pagination-total{
+                            
+                                
+                            }
+                        }//div.swiper-pagination
+        
+                    }//div.imgSwiper
+                }//div.leftWrapper
+
+                >div.rightWrapper{
+                    // padding: 40px 30px;
+                    >div.contentsWrappper{
+                    
+                        
+                        div.titleWrapper{
+                        
+                            >strong.title{
+                            
+                            }
+
+                            >a.gitBtn{
+                            
+                                >i{
+                                    
+                                }
+                            }
+            
+                        }//div.titleWrapper
+        
+                        >b{
+                            &:not(:last-child){
+                            
+                            }
+                            white-space: normal;
+                            @include text();
+
+                            >i{
+                            
+                            }
+                        }
+        
+                        >p.explanation{
+                        
+                        }
+
+                        >a{
+                        
+                            
+                            &::before{
+                            
+                            }
+
+                            &::after{
+                                
+                            }
+
+                            &:hover{
+                                &::before{
+                    
+                                }
+
+                                &::after{
+                        
+                                }
+
+                            }//&:hover
+                        }//a
+
+                    }//div.contentsWrappper
+                }//div.rightWrapper
+            }//div.detailPopupWrapper
+
+        }//div.detailPopupAllWrapper
+
+        >article.contact{
+
+            >div.contentsWrapper{
+                >h2{
+
+                }//h2
+
+                >div.contactContentsWrapper{
+                    padding: 0px $MarPad;
+                    width: 100%;
+
+                    >a.goToEmailSvg{
+                        
+                        >svg.rocketSvg{
+                            width: 120px; height: 120px;
+
+                            >path{
+                                
+                                
+                            }
+                            
+                        }
+                    }//a.goToEmailSvg
+                    p{
+                        
+                    }
+                    form.message{
+                        
+                        >input.title{
+                            
+                            &::placeholder{
+                                
+                            }
+                        }
+                        
+                        >textarea.msg{
+                            
+                            &:focus{
+                            
+                            }
+                            &::placeholder{
+                            
+                                
+                            }
+                        }
+
+                        button.send{
+                            
+                        }
+                    }//form.message
+                }//div.contactContentsWrapper
+            }//div.contentsWrapper
+
+            >div.bgWrapper{
+
+                >ul{
+
+                    >li{
+                    
+                        >img{}
+                    }
+                }//ul
+                
+                >ul.plantWrapper{
+                
+                    >li{
+                        >img{
+                
+                        }
+
+                        &:nth-of-type(1){// 분홍색 행성
+                            width: 80px; height: 80px;
+                        }
+                        &:nth-of-type(2){// 주황색, 연두색 행성
+                            width: 140px; height: 140px;
+                        }
+                        &:nth-of-type(3){// 고리가 있는 보라색 행성
+                            width: 167px; height: 140px;
+                        }
+                        &:nth-of-type(4){// 연두색 행성
+                            width: 80px; height: 80px;
+                        }
+                    }
+                    &::after{
+
+                    }
+                }//ul.plantWrapper
+
+                >ul.starWrapper{
+
+                    >li{
+                        >img{
+
+                        }
+
+                        &:nth-of-type(1){// 연두색 별
+                            
+                        }
+                        &:nth-of-type(2){// 하얀색 별
+                        
+                        }
+                        &:nth-of-type(3){// 금색 별
+                            
+                        }
+                        &:nth-of-type(4){// 하얀색 별
+                        
+                        }
+                        &:nth-of-type(5){// 하얀색 별
+                            
+                        }
+                        &:nth-of-type(6){// 연두색 별
+                        
+                        }
+                        &:nth-of-type(7){// 하얀색 별
+                            
+                        }
+                        &:nth-of-type(8){// 하얀색 별
+                        
+                        }
+                    }
+                }//ul.starWrapper
+
+            }//div.bgWrapper
+
+            &.scroll{
+                >div.contentsWrapper{
+                    >div.contactContentsWrapper{
+                        a.goToEmailSvg{
+                            svg.rocketSvg{
+                                path{
+                                    
+                                }
+                            }
+                        }
+                    }//div.contactContentsWrapper
+                }//div.contentsWrapper
+            }//article.contact.scroll
+        }//article.contact
+    }//main
+
+}//@media (max-width: 650px)
+
+
