@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_react_ver/static/css/main.39cae41f.css",
-    "main.js": "/portfolio_react_ver/static/js/main.ae5ab7cf.js",
+    "main.css": "/portfolio_react_ver/static/css/main.90e28a59.css",
+    "main.js": "/portfolio_react_ver/static/js/main.faff6cc6.js",
     "static/js/787.1f11dfe9.chunk.js": "/portfolio_react_ver/static/js/787.1f11dfe9.chunk.js",
     "static/media/remixicon.svg?t=1690730386070": "/portfolio_react_ver/static/media/remixicon.db77551b8efc76571c4f.svg",
     "static/media/birthBg.jpg": "/portfolio_react_ver/static/media/birthBg.474db01464d4286c3239.jpg",
@@ -22,12 +22,12 @@
     "static/media/titleWave1.svg": "/portfolio_react_ver/static/media/titleWave1.94f9750f4de8638177b0.svg",
     "static/media/titleWave2.svg": "/portfolio_react_ver/static/media/titleWave2.366709df2aadcc71e5d6.svg",
     "static/media/skillCursor.svg": "/portfolio_react_ver/static/media/skillCursor.c668e90166a87d93cceb.svg",
-    "main.39cae41f.css.map": "/portfolio_react_ver/static/css/main.39cae41f.css.map",
-    "main.ae5ab7cf.js.map": "/portfolio_react_ver/static/js/main.ae5ab7cf.js.map",
+    "main.90e28a59.css.map": "/portfolio_react_ver/static/css/main.90e28a59.css.map",
+    "main.faff6cc6.js.map": "/portfolio_react_ver/static/js/main.faff6cc6.js.map",
     "787.1f11dfe9.chunk.js.map": "/portfolio_react_ver/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39cae41f.css",
-    "static/js/main.ae5ab7cf.js"
+    "static/css/main.90e28a59.css",
+    "static/js/main.faff6cc6.js"
   ]
 }
