@@ -14,9 +14,10 @@ export default function Portfolio() {
   const elHandIconI = useRef();
 
   const detailFun = (k) => {
-    console.log(elDetail.current);
     setPtItemIdx(k);
     elDetail.current.classList.add('active');
+    document.body.classList.add('hidden');
+
   }//detailFun() 함수정의
 
   const detailCloseFun = () => {
@@ -24,6 +25,9 @@ export default function Portfolio() {
       imgSwiper.slideTo(0, 10); //  해당 인덱스로 이동한다. // 이거 쓰면 버튼이 처음에 작동을 안해서 버튼 뺌(대신 한 번 슬라이드 하면, 버튼 작동됨)
     }
     elDetail.current.classList.remove('active');
+    document.body.classList.remove('hidden');
+
+
     elHandIconI.current.classList.add('none');
   }//detailFun() 함수정의
 

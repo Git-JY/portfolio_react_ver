@@ -57,6 +57,10 @@ function App() {
     elHeader.classList.remove('active');
   }//navCloseFun() 함수정의 
 
+  const scrollBarFun = () => {
+    document.body.classList.toggle('scrollbar');
+  }//scrollBarFun() 함수정의
+
   return (
     <div className="App">
       <header className="header">
@@ -76,6 +80,10 @@ function App() {
           </ul>
         </nav>
       </header>
+      <button className='scrollBarBtn' onClick={scrollBarFun}>
+        scroll<br/>
+        on/off
+      </button>
       <main>
         <Main/> {/* 화면 크기대로 */}
         <About/>

@@ -14,8 +14,9 @@ export default function Contact() {
     
     let ObjForm = Object.fromEntries(formdata); 
     console.log(ObjForm);
-    //https://port-0-reactproject-br-server-6w1j2alm4a7mi8.sel5.cloudtype.app/portfolio1
-    const getDt = await axios.post('https://port-0-reactproject-br-server-6w1j2alm4a7mi8.sel5.cloudtype.app/portfolio1', ObjForm);
+    //https://port-0-reactproject-br-server-6w1j2alm4a7mi8.sel5.cloudtype.app/portfolio_one
+    //`${process.env.FIRST_PORTFOLIO_SERVER}/portfolio_one`
+    const getDt = await axios.post('https://port-0-reactproject-br-server-6w1j2alm4a7mi8.sel5.cloudtype.app/portfolio_one', ObjForm);
     console.log('결과: ', getDt);
 
     if(getDt){

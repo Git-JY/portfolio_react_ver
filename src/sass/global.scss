@@ -8,6 +8,14 @@ body{
     // background-color: url('/img/icon_logo.svg') center center / 30px 30px repeat scroll;
     background: black;
     cursor: url('/img/rocketCursor.svg') 0 0, auto;
+    &.hidden{
+        overflow: hidden;     
+    }
+    &.scrollbar{
+        &::-webkit-scrollbar {
+            display: inline-block;
+        }
+    }
 
 }
 
@@ -135,7 +143,16 @@ header{
     }
 }//header
 
-
+button.scrollBarBtn{
+    position: fixed; bottom: 5px; right: 5px; z-index: 100;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    @include flex();
+    background-color: rgba(0,0,0,0.5);
+    padding: 35px;
+    color: white;
+    letter-spacing: 2px;
+}
 
 main{
 
@@ -712,6 +729,7 @@ main{
     >article.portfolio{
         position: relative; top: 0; left: 0; z-index: 0;
         width: 100%; min-height: 100vh; height: auto;
+        @include flex();
 
         >div.bgWrapper{
             position: absolute; top: 0; left: 0; z-index: 0;
@@ -787,10 +805,9 @@ main{
             }//div.titleWrapper
 
         >ul.portfolioItemWrapper{
+            transform: translateY(50%);
             flex-shrink: 0;
             width: 100%;
-            position: absolute; top: 50%; left: 50%; z-index: 1;
-            transform: translate(-50%, 0%);
             opacity: 0;
             transition: .5s;
 
@@ -858,7 +875,7 @@ main{
 
         &.scroll{
             >ul.portfolioItemWrapper{
-                transform: translate(-50%, -50%);
+                transform: translateY(0%);
                 opacity: 100%;
             }
         }

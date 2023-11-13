@@ -4,6 +4,11 @@ html{
 }
 
 body{
+    &.scrollbar{
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
 
 }
 
@@ -63,7 +68,9 @@ article h2, article h2>strong{
         }
     }//header
 
-
+    button.scrollBarBtn{
+        display: none;
+    }
 
     main{
 
@@ -635,7 +642,7 @@ article h2, article h2>strong{
                 }//div.leftWrapper
 
                 >div.rightWrapper{
-                    // padding: 40px 30px;
+                    padding: 40px 30px;
                     >div.contentsWrappper{
                     
                         
@@ -667,7 +674,7 @@ article h2, article h2>strong{
                         }
         
                         >p.explanation{
-                        
+                            font-size: 14px;
                         }
 
                         >a{
